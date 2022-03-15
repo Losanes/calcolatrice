@@ -1,0 +1,14 @@
+<div>
+  <h2>Componente principale</h2>
+  <p>numero 1</p>
+  <input type="text" placeholder="inserisci un numero qui" [(ngModel)]="n1">
+  <p>numero 2</p>
+  <input type="text" placeholder="inserisci un numero qui" [(ngModel)]="n2">
+  <br>
+  <button (click)="click('+')" style="background-color: blue; color: white;">( + )</button>
+  <button (click)="click('-')" style="background-color: cyan; color: white;">( - )</button>
+  <button (click)="click('*')" style="background-color: yellow;">( * )</button>
+  <button (click)="click('/')" style="background-color: green; color: white;">( / )</button>
+</div>
+
+<app-figlio [ris]="risultato"></app-figlio>
